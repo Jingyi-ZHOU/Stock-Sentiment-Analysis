@@ -1,0 +1,26 @@
+This folder contains the codes for application 2.
+
+    Folder: Train
+    This folder contains the training script and labelled data for training.
+
+    Folder: Model
+    This folder contains the wrapped model for prediction.
+
+    File: test.py
+    This script takes an input of a .txt file and predict the sentiments of all the short texts in each line. The standard format of input file for test is .txt file.
+
+    File: example.txt
+    This file contains all the text which needs to be predicted. In this file, each line represents a short text. So be sure to separate all the text into lines.
+
+**  To run the model to predict sentiments:
+    1) in the terminal switch the path to this folder: cd xxxx/xxxx/application2
+    2) run this command: "python3 test.py example.txt", in which you can replace "example.txt" with other files
+
+Python libraries used:
+sys
+re
+string
+numpy
+pandas
+nltk
+sklearn

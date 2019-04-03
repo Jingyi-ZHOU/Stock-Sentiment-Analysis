@@ -1,0 +1,40 @@
+This folder contains the codes for combining application 1 and 2 for application 3.
+
+    Folder: Model
+    This folder contains the wrapped model for prediction (same as that in application 2)
+
+    Folder: Train
+    This folder contains the training data (same as that in application 2)
+
+    File: application3.py
+    This script first scrap the suspended stock on Nasdaq and then retrieve relevant news regarding to that company. Then we predict the sentiment based on the news title. The output is also saved to the "output.csv" file.
+
+    File: application3.ipynb
+    Same content as the python script, but in a Jupyter Notebook format which provides step-by-step output.
+
+    File: ouptut.csv
+    This file saves the output of the sentiment analysis results of news regarding to the suspened stock.
+
+**  To run the model to predict sentiemnts:
+    1) in the terminal switch the path to this folder: cd xxxx/xxxx/application3
+    2) run this command: "python3 appliction3.py"
+
+The output format:
+    1. "Issuer Name": the name of the company (from the Nasdaq website)
+    2. "Symbol": the ticker of the company (from the Nasdaq website)
+    3. "Reason": the reason of the suspension (from the Nasdaq website)
+    4. "news_title": the title of the retrieved news
+    5. "news_link": the URL link of the retrieved news
+    6. "news_abstract": the abstract of the retrieved news
+    7. "pos_sentiment_score": the positive sentiment score the retrieved news (pos_score + neg_score = 1)
+    8. "neg_sentiment_score": the negative sentiment score the retrieved news (pos_score + neg_score = 1)
+    9. "sentiment_label": the sentiment label of the retrieved news (negative or positive)
+
+Python libraries used:
+sys
+re
+string
+numpy
+pandas
+nltk
+sklearn

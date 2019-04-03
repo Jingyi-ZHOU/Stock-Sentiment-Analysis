@@ -1,0 +1,13 @@
+In this folder, the jupyter notebook file shows how we scrapped the suspended stcoks from the Nasdaq website and then use two searching APIs to retrieve relevant news regarding to the stock to find out the reason for suspension.
+
+The result (relevant news) are then exported a JSON file.
+
+How to run: please run this .ipynb file in Jupyter Notebook.
+
+Python libraries used:
+re
+bs4
+urllib
+pandas
+requests
+json
